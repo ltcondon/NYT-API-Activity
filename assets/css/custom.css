@@ -1,0 +1,12 @@
+.jumbotron-fluid {
+    background-color: #000080;
+    height: 5em;
+    font-size: 2rem;
+
+}
+
+p {
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:  2rem;
+}
