@@ -22,7 +22,7 @@
             <form class="pt-3">
                     <div class="form-group">
                       <label for="searchTerm">Search Term:</label>
-                      <input id="searchTerm" type="text" class="form-control">
+                      <input id="searchTerm" type="text" placeholder= "election" class="form-control">
                     </div>
                     <div class="form-group">
                       <label for="retrieveRecords">Number of Records to Retrieve:</label>
@@ -36,18 +36,24 @@
                     </div>
                     <div class="form-group">
                             <label for="startYear">Start Year (Optional):</label>
-                            <input id="searchTerm" type="text" class="form-control">
+                            <input id="startYear" type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="startYear">End Year (Optional):</label>
-                        <input id="searchTerm" type="text" class="form-control">
+                        <label for="endYear">End Year (Optional):</label>
+                        <input id="endYear" type="text" class="form-control">
                      </div>
             </form>
             <div>
-                    <span><img id="searchParam" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
+                    <span><img id="btnSearch" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
                     <span><img id="deleteParam" class="img-thumbnail" src="assets/media/trash.png"><a href="#" class="card-link">Clear Results</a></span>
             </div>
        </div>
+       <div id="article-Div">
+
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script type="text/javascript" src="assets/javascript/logic.js" ></script>
+       
   </body>
 </html>
 
