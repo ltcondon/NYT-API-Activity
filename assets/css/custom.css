@@ -11,7 +11,8 @@ p {
     font-size:  2rem;
 }
 
-#nspico {
+#nspico
+{
     height: 30px;
     width: 40px;
     background: transparent;
@@ -27,8 +28,10 @@ p {
         padding: 5px;
 }
 
+#searchButton,
+#deleteButton,
 #searchParam,
-#deleteParam {
+#topArticle  {
     height: 30px;
     width: 30px;
     background: transparent;
