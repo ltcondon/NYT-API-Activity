@@ -14,6 +14,9 @@
         <title>NYT Search Activity</title>
     </head>
   <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/javascript/logic.js" ></script>
+
       <div class="jumbotron-fluid  m-2 text-white text-center">
          <p><span><img id="nspico" class="img-thumbnail" src="assets/media/newspapericon.png"></span><strong>New York Times Search </strong> </p>
       </div>
@@ -40,22 +43,22 @@
                     <div class="form-group">
                             <i class="fas fa-calendar-alt"></i>
                             <label for="startYear">Start Year (Optional):</label>
-                            <input id="searchTerm" type="text" class="form-control">
+                            <input id="startYear" type="text" class="form-control">
                     </div>
                     <div class="form-group">
                         <i class="fas fa-calendar-alt"></i>
-                        <label for="startYear">End Year (Optional):</label>
-                        <input id="searchTerm" type="text" class="form-control">
+                        <label for="endYear">End Year (Optional):</label>
+                        <input id="endYear" type="text" class="form-control">
                      </div>
             </form>
             <div>
-                    <span class="mr-4"><img id="searchParam" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
-                    <span><img id="deleteParam" class="img-thumbnail" src="assets/media/trash.png"><a href="#" class="card-link">Clear Results</a></span>
+                    <span class="mr-4"><img id="searchButton" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
+                    <span><img id="deleteButton" class="img-thumbnail" src="assets/media/trash.png"><a href="#" class="card-link">Clear Results</a></span>
             </div>
        </div>
        <div class="card m-3">
           <div class="card-header p-1">
-                <span><img id="searchParam" class="img-thumbnail" src="assets/media/newspapericon.png"></span><strong>Top Articles</strong>
+                <span><img id="topArticle" class="img-thumbnail" src="assets/media/newspapericon.png"></span><strong>Top Articles</strong>
         </div>
        </div>
   </body>
