@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     // https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=qb8DZm914Unf33WJWv9C0NA9J3AiAGjn
 
-    var btnSearch= $("#btnSearch");
-    var btnClear = "#";
+    var btnSearch= $("#searchButton");
+    var btnClear = $("#deleteButton");
     
 
     btnSearch.on("click", function() {
@@ -21,6 +21,7 @@ $(document).ready(function() {
         if ( searchTerm !== null)
         {
             limit = $("#retrieveRecords").val();
+            console.log(limit);
 
             startYear = $("#startYear").val();
             endYear = $("#endYear").val();
@@ -31,27 +32,22 @@ $(document).ready(function() {
                 url : queryURL, 
                 method: "GET", 
             }).then(function(results){
-                console.log(results); 
+                // console.log(results); 
 
                 //
-                for (var i = 0; i < limit; i ++) {
+                for (var i = 0; i < limit; i++) {
 
                     var headline = results.response.docs[i].headline.main; 
-                    $("<h3>").text(headline); 
-
                     // console.log(headline); 
-
                     articleDiv.append($("<h1>" + "Article: " + headline + "</h1>"));
 
                     var byline = results.response.docs[i].byline.original; 
                     // console.log(byline); 
-
                     articleDiv.append($("<h2> Byline: " + byline + "</h2>"));
+
                     var snippet = results.response.docs[i].snippet; 
-                    console.log(snippet);
+                    // console.log(snippet);
                     articleDiv.append($("<p> News Snippet: ").text(snippet));
-
-
 
                 }
 
@@ -61,6 +57,5 @@ $(document).ready(function() {
             alert("Please enter a search Term"); 
         }
     });
-
 
 })

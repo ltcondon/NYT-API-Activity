@@ -7,10 +7,16 @@
         <!-- Bootstrap CSS -->
     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://bootswatch.com/4/spacelab/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
         <title>NYT Search Activity</title>
     </head>
   <body>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/javascript/logic.js" ></script>
+
       <div class="jumbotron-fluid  m-2 text-white text-center">
          <p><span><img id="nspico" class="img-thumbnail" src="assets/media/newspapericon.png"></span><strong>New York Times Search </strong> </p>
       </div>
@@ -22,7 +28,7 @@
             <form class="pt-3">
                     <div class="form-group">
                       <label for="searchTerm">Search Term:</label>
-                      <input id="searchTerm" type="text" placeholder= "election" class="form-control">
+                      <input id="searchTerm" type="text" class="form-control">
                     </div>
                     <div class="form-group">
                       <label for="retrieveRecords">Number of Records to Retrieve:</label>
@@ -35,22 +41,30 @@
                       </select>
                     </div>
                     <div class="form-group">
+                            <i class="fas fa-calendar-alt"></i>
                             <label for="startYear">Start Year (Optional):</label>
                             <input id="startYear" type="text" class="form-control">
                     </div>
                     <div class="form-group">
+                        <i class="fas fa-calendar-alt"></i>
                         <label for="endYear">End Year (Optional):</label>
                         <input id="endYear" type="text" class="form-control">
                      </div>
             </form>
             <div>
-                    <span><img id="btnSearch" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
-                    <span><img id="deleteParam" class="img-thumbnail" src="assets/media/trash.png"><a href="#" class="card-link">Clear Results</a></span>
+                    <span class="mr-4"><img id="searchButton" class="img-thumbnail" src="assets/media/Search_Icon.png"><a href="#" class="card-link">Search</a></span>
+                    <span><img id="deleteButton" class="img-thumbnail" src="assets/media/trash.png"><a href="#" class="card-link">Clear Results</a></span>
             </div>
        </div>
-       <div id="article-Div">
+       <div class="card m-3">
+          <div class="card-header p-1">
+                <span><img id="topArticle" class="img-thumbnail" src="assets/media/newspapericon.png"></span><strong>Top Articles</strong>
+        </div>
+        <div id="article-Div">
 
-       </div>
+        </div>
+     </div>
+       
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script type="text/javascript" src="assets/javascript/logic.js" ></script>
        
